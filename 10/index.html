@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+    <style>
+      body{
+	padding: 0;
+	margin: 0;
+}
+html{
+	box-sizing: border-box;
+}
+*,*::after,*::before{
+	box-sizing: inherit;
+}
+.clearfix::after{
+	content: " ";
+	display: block;
+	clear: both;
+}
+header,footer{
+	border: 1px solid #ff00ff;
+	height: 200px;
+	margin: 8px 0;
+}
+#center{
+	width: 1000px;
+	margin: auto;
+}
+aside{
+	width: 20%;
+	min-height: 500px;
+	border: 1px solid #ff00ff;
+	float: left;	
+}
+main{
+	border: 1px solid #ff00ff;
+	width: 58%;
+	float: left;
+	margin:0 1%;
+	min-height: 500px;
+	color: aquamarine;
+}
+h1{
+	text-align: center;
+	color: #0fdd0f;
+}
+      </style>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+		<title>网页布局测试(10ci)</title>
+	</head>
+	<body>
+		<div id="center">
+			<h1>个人主页</h1>
+			<header>header</header>
+			<section class="clearfix">
+				<aside>aside</aside>
+				<main>main</main>
+				<aside>aside</aside>
+			</section>
+			<footer>footer</footer>
+		</div>
+	</body>
+</html>
